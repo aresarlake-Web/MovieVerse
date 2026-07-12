@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand-primary: #111111;
+  --color-brand-accent: #e11d48; /* Crimson / Rose accent for visual cinema focus */
+}
+
+/* Base style refinements */
+body {
+  font-family: var(--font-sans);
+  background-color: #fafafa; /* Airbnb soft light gray */
+  color: #171717;
+  overflow-y: scroll;
+}
+
+/* Custom minimal scrollbar for Apple design */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e4e4e7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d8;
+}
+
